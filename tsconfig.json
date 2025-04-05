@@ -9,8 +9,14 @@
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
-		"moduleResolution": "bundler"
-	}
+		"moduleResolution": "bundler",
+		// Add these options for React
+		"jsx": "react-jsx",
+    "module": "ESNext",
+    "target": "ESNext",
+		// Include these with your existing settings
+	},
+	"include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.svelte", "src/lib/components/ReactToWebComponent.js", "src/lib/components/ReactToWebComponent.js"]
 	// Path aliases are handled by https://svelte.dev/docs/kit/configuration#alias
 	// except $lib which is handled by https://svelte.dev/docs/kit/configuration#files
 	//

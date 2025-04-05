@@ -1,8 +1,3 @@
-
-// Define TypeScript interfaces
-
-import type { ResultOrError } from "$lib/types";
-
 export interface TriviaQuestion {
 	category: string;
 	type: string;
@@ -10,7 +5,7 @@ export interface TriviaQuestion {
 	question: string;
 	correct_answer: string;
 	incorrect_answers: string[];
-	all_answers?: string[]; // Added in our code
+	all_answers?: string[]; /
 }
 
 export interface TriviaResponse {
@@ -19,17 +14,17 @@ export interface TriviaResponse {
 }
 
 export interface EnhancedTriviaQuestion extends TriviaQuestion {
-	all_answers: string[]; // This is required in our enhanced version
+	all_answers: string[]; 
 }
 
 export type TriviaContext = {
-  isLoading: boolean;
-  questions: EnhancedTriviaQuestion[];
-  error: string | null;
-  userAnswers: number[];
-  userAnswersTime: number[];
-  userQuestionsSeen: boolean[];
-  currentQuestionIndex: number;
+	isLoading: boolean;
+	questions: EnhancedTriviaQuestion[];
+	error: string | null;
+	userAnswers: number[];
+	userAnswersTime: number[];
+	userQuestionsSeen: boolean[];
+	currentQuestionIndex: number;
 	difficulty: string;
 	category: string;
-}
+};
